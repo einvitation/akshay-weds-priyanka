@@ -528,3 +528,11 @@ figure.rituals {
 .mainimg img{width: 300px;}
 }
 .hide{display: none !important;}
+.note{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    line-height: 35px;
+}
