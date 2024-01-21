@@ -7,11 +7,10 @@ body {
     padding: 0;
     margin: 0;
     color: #032b03;
-    background-color: #f3e5d8;
-    background: url(../images/bg.jpg) no-repeat top;
+    background: url(../images/bg.jpg) #f3e5d8 no-repeat top;
     min-height: 100vh;
     background-attachment: fixed;
-    background-size: contain;
+    background-size: cover;
 }
 body, html {
     overflow-x: hidden;
@@ -327,7 +326,7 @@ figure.rituals {
     padding-top: 35px;
     text-align: center;
     color: #032b03;
-    background: #bec38e;
+    background: #fff;
     text-shadow: 0 1px 1px rgba(0, 0, 0, .5);
     box-shadow: 0 0 10px 0 rgb(0 0 0 / 65%);
 }
@@ -344,24 +343,27 @@ figure.rituals {
     position: fixed;
     bottom: 50px;
     right: 20px;
-    height: 50px;
-    width: 50px;
+    height: 36px;
+    width: 36px;
     z-index: 3;
-    font-size: 30px;
-    line-height: 40px;
+    font-size: 20px;
+    line-height: 36px;
     background: none;
     text-align: center;
     border-radius: 52px;
-    border: 2px solid;
+    border: 2px solid #eda613;
     padding: 0;
-    color: #000;
+    color: #fff;
+    background: #eda613;
     -moz-transition: all 300ms ease-in-out 0s;
     -webkit-transition: all 300ms ease-in-out 0s;
     transition: all 300ms ease-in-out 0s;
     display: none;
 }
 .scrollup:hover {
-    color: #de2828;
+    border: 2px solid #de2828;
+    color: #fff;
+    background: #de2828;
 }
 a.mob-toggle {
     position: fixed;
@@ -440,9 +442,10 @@ a.mob-toggle {
 .introduction h2 {
     font-size: 36px;
 }
-.introduction h2 span{
+.introduction h2 span {
     font-size: 20px;
-    color: #000;
+    color: #133713;
+    font-family: 'DM Sans';
 }
 .mainimg img{
     max-width: 500px;
@@ -521,6 +524,7 @@ figure.rituals {
     width: 230px;
     margin: 0 auto;
 }
-.rituals img{width: 100%;}
+.rituals img{width: 100%;max-width: unset;}
 .mainimg img{width: 300px;}
 }
+.hide{display: none !important;}
